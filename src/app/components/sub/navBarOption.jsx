@@ -47,7 +47,7 @@ const NavBarOption = ({
             <li key={index}>
               <Link
                 href="#"
-                className=" p-2 px-6 inline-block hover:bg-lightBlue rounded-md hover:text-buttonBackground transition-all duration-300"
+                className="p-2 px-6 inline-block hover:bg-lightBlue rounded-md hover:text-buttonBackground transition-all duration-300"
                 onClick={() => {
                   setGroupIsOpen(false);
                   setNavBarIsOpen(false);

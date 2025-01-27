@@ -1,4 +1,6 @@
 import { Signika_Negative, Rubik } from 'next/font/google';
+import Footer from './components/main/Footer';
+import Header from './components/main/Header';
 import './styles/globals.css';
 
 const signikaNegative = Signika_Negative({
@@ -20,7 +22,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${signikaNegative.variable} ${rubik.variable} antialiased`}
       >
-        {children}
+        <article className="flex flex-col justify-between min-h-screen">
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </article>
       </body>
     </html>
   );

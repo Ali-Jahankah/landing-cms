@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import MobileNav from './MobileNav';
-import HeaderLogo from '../sub/HeaderLogo';
-import BurgerButton from '../sub/BurgerButton';
+import HeaderLogo from '../sub/header/HeaderLogo';
+import BurgerButton from '../sub/header/BurgerButton';
 import DesktopNav from './DesktopNav';
 
 const NavBar = () => {

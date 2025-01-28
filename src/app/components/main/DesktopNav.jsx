@@ -1,6 +1,6 @@
 import { navBarConfig } from '@/app/config/navbar';
 import Link from 'next/link';
-import DesktopGroupLink from '../sub/DesktopGroupLink';
+import DesktopGroupLink from '../sub/header/DesktopGroupLink';
 
 const DesktopNav = () => {
   return (

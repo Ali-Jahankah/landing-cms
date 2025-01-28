@@ -1,27 +1,13 @@
 import { navBarConfig } from '@/app/config/navbar';
 import Link from 'next/link';
-import DesktopSubLink from '../sub/DesktopSubLink';
+import DesktopGroupLink from '../sub/DesktopGroupLink';
 
 const DesktopNav = () => {
   return (
     <div className="hidden w-full lg:flex justify-center text-xl flex-1">
       {navBarConfig.map((linkOption, index) =>
         linkOption.hasGroup ? (
-          <div
-            className="relative py-2 px-4 cursor-pointer hover:underline underline-offset-8 decoration-white rounded-lg hover:decoration-lightBlue transition-all duration-500 hover:bg-buttonBackground group"
-            key={index}
-          >
-            <div className="flex items-center gap-1">
-              <h5>{linkOption.label}</h5>
-              <linkOption.rightIcon width={24} height={24} />
-            </div>
-            <div
-              className="absolute left-0 top-14 w-max h-40 overflow-auto transform origin-top scale-y-0 group-hover:scale-y-100 transition-all duration-300 ease-out shadow-xl bg-buttonBackground gap-2 flex flex-wrap flex-col py-3"
-              style={{ transformOrigin: 'top' }}
-            >
-              <DesktopSubLink group={linkOption.group} />
-            </div>
-          </div>
+          <DesktopGroupLink linkOption={linkOption} key={index} />
         ) : (
           <Link
             href="#"

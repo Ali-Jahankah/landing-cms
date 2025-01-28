@@ -1,6 +1,5 @@
 import {
   GlobeAltIcon,
-  ChevronDownIcon,
   CircleStackIcon,
   BuildingOfficeIcon,
   UserGroupIcon,
@@ -10,7 +9,6 @@ export const navBarConfig = [
   {
     label: 'Platform',
     leftIcon: GlobeAltIcon,
-    rightIcon: ChevronDownIcon,
     hasGroup: true,
     group: [
       { label: 'Link 1', href: 'link-1' },
@@ -22,7 +20,6 @@ export const navBarConfig = [
   {
     label: 'Resources',
     leftIcon: CircleStackIcon,
-    rightIcon: ChevronDownIcon,
     hasGroup: true,
     group: [
       { label: 'Link 1', href: 'link-1' },
@@ -34,7 +31,6 @@ export const navBarConfig = [
   {
     label: 'Company',
     leftIcon: BuildingOfficeIcon,
-    rightIcon: ChevronDownIcon,
     hasGroup: true,
     group: [
       { label: 'Link 1', href: 'link-1' },
@@ -51,14 +47,12 @@ export const navBarConfig = [
     label: 'Customers',
     href: 'customers',
     leftIcon: UserGroupIcon,
-    rightIcon: null,
     hasGroup: false
   },
   {
     label: 'Pricing',
     href: 'pricing',
     leftIcon: BanknotesIcon,
-    rightIcon: null,
     hasGroup: false
   }
 ];

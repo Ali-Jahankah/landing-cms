@@ -1,5 +1,5 @@
 import { navBarConfig } from '@/app/config/navbar';
-import NavBarOption from '../sub/navBarOption';
+import MobileNavBarOption from '../sub/MobileNavBarOption';
 
 const MobileNav = ({ setNavBarIsOpen, navBarIsOpen }) => {
   return (
@@ -11,12 +11,11 @@ const MobileNav = ({ setNavBarIsOpen, navBarIsOpen }) => {
       }`}
     >
       {navBarConfig.map((linkOption, index) => (
-        <NavBarOption
+        <MobileNavBarOption
           key={index}
           navBarIsOpen={navBarIsOpen}
           leftIcon={linkOption.leftIcon}
           label={linkOption.label}
-          rightIcon={linkOption.rightIcon}
           href={linkOption.href}
           hasGroup={linkOption.hasGroup}
           group={linkOption.group}

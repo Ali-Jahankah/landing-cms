@@ -39,8 +39,8 @@ const NavBarOption = ({
       </div>
       {hasGroup && (
         <ul
-          className={`flex flex-col gap-3 overflow-hidden ml-6  ${
-            groupIsOpen ? 'h-full my-4' : 'h-0'
+          className={`flex flex-col gap-3  pl-6 bg-border  ${
+            groupIsOpen ? 'h-48 my-4' : 'h-0 overflow-hidden'
           } transition-all duration-500`}
         >
           {group.map((subLink, index) => (

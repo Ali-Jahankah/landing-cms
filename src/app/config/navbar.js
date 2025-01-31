@@ -11,10 +11,10 @@ export const navBarConfig = [
     leftIcon: GlobeAltIcon,
     hasGroup: true,
     group: [
-      { label: 'Link 1', href: 'link-1' },
-      { label: 'link 2', href: 'link-2' },
-      { label: 'Link 3', href: 'link-3' },
-      { label: 'Link 4', href: 'link-4' }
+      { label: 'Link 1', href: '#link-1' },
+      { label: 'link 2', href: '#link-2' },
+      { label: 'Link 3', href: '#link-3' },
+      { label: 'Link 4', href: '#link-4' }
     ]
   },
   {
@@ -22,10 +22,10 @@ export const navBarConfig = [
     leftIcon: CircleStackIcon,
     hasGroup: true,
     group: [
-      { label: 'Link 1', href: 'link-1' },
-      { label: 'link 2', href: 'link-2' },
-      { label: 'Link 3', href: 'link-3' },
-      { label: 'Link 4', href: 'link-4' }
+      { label: 'Link 1', href: '#link-1' },
+      { label: 'link 2', href: '#link-2' },
+      { label: 'Link 3', href: '#link-3' },
+      { label: 'Link 4', href: '#link-4' }
     ]
   },
   {
@@ -33,25 +33,25 @@ export const navBarConfig = [
     leftIcon: BuildingOfficeIcon,
     hasGroup: true,
     group: [
-      { label: 'Link 1', href: 'link-1' },
-      { label: 'link 2', href: 'link-2' },
-      { label: 'Link 3', href: 'link-3' },
-      { label: 'Link 4', href: 'link-4' },
-      { label: 'Link 1', href: 'link-1' },
-      { label: 'link 2', href: 'link-2' },
-      { label: 'Link 3', href: 'link-3' },
-      { label: 'Link 4', href: 'link-4' }
+      { label: 'Link 1', href: '#link-1' },
+      { label: 'link 2', href: '#link-2' },
+      { label: 'Link 3', href: '#link-3' },
+      { label: 'Link 4', href: '#link-4' },
+      { label: 'Link 5', href: '#link-5' },
+      { label: 'link 6', href: '#link-6' },
+      { label: 'Link 7', href: '#link-7' },
+      { label: 'Link 8', href: '#link-8' }
     ]
   },
   {
     label: 'Customers',
-    href: 'customers',
+    href: '#customers',
     leftIcon: UserGroupIcon,
     hasGroup: false
   },
   {
     label: 'Pricing',
-    href: 'pricing',
+    href: '#pricing',
     leftIcon: BanknotesIcon,
     hasGroup: false
   }

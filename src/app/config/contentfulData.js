@@ -3,11 +3,7 @@ export const contentfulDataConfig = {
     getEntries: {
       content_type: 'headerSection',
       'sys.id': '1aEChoorW1gpuqfxo9XJLR',
-      select: [
-        'fields.headerLogo',
-        'fields.headerTitle',
-        'fields.headerNavLinks'
-      ],
+      select: ['fields.headerLogo'],
       include: 10
     },
     error: 'No header section found with ID: 1aEChoorW1gpuqfxo9XJLR'

@@ -1,5 +1,5 @@
 import { navBarConfig } from '@/app/config/navbar';
-import MobileNavBarOption from '../sub/header/MobileNavBarOption';
+import MobileNavBarOption from './MobileNavBarOption';
 
 const MobileNav = ({ setNavBarIsOpen, navBarIsOpen }) => {
   return (

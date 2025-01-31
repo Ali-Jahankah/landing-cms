@@ -24,7 +24,7 @@ const MobileNavBarOption = ({
         ) : (
           <Link
             href="#"
-            className="block"
+            className="block font-semibold"
             onClick={() => setNavBarIsOpen(false)}
           >
             {label}

@@ -1,8 +1,10 @@
-import NavBar from './NavBar';
-
+import NavBar from '../sub/header/NavBar';
 const Header = () => {
   return (
-    <header className="w-full shadow-lg sticky top-0 h-16 flex items-center">
+    <header
+      role="banner"
+      className="w-full shadow-lg sticky top-0 h-16 flex items-center z-50 bg-buttonBackground"
+    >
       <NavBar />
     </header>
   );

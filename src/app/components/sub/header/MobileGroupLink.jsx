@@ -4,13 +4,23 @@ const MobileGroupLink = ({ groupIsOpen, setGroupIsOpen, label }) => {
   return (
     <div
       onClick={() => setGroupIsOpen(!groupIsOpen)}
-      className="flex w-full items-center"
+      className="flex w-full items-center cursor-pointer"
     >
-      <h4>{label}</h4>
+      <span className="text-lg font-semibold">{label}</span>
       {groupIsOpen ? (
-        <ChevronUpIcon width={24} height={24} className="ml-auto" />
+        <ChevronUpIcon
+          width={24}
+          height={24}
+          className="ml-auto"
+          aria-hidden={true}
+        />
       ) : (
-        <ChevronDownIcon width={24} height={24} className="ml-auto" />
+        <ChevronDownIcon
+          width={24}
+          height={24}
+          className="ml-auto"
+          aria-hidden={true}
+        />
       )}
     </div>
   );

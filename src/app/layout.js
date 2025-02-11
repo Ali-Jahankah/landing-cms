@@ -34,17 +34,31 @@ export const metadata = {
   },
   authors: [{ name: 'Ali Jahankhah', url: 'https://uaral.me' }]
 };
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Technical Task',
+  url: 'https://landing-cms-kappa.vercel.app',
+  description: 'A fast, SEO-optimized Next.js app as a technical task.',
+  author: {
+    '@type': 'Person',
+    name: 'Ali Jahankhah',
+    url: 'https://uaral.me'
+  }
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${signikaNegative.variable} ${rubik.variable} antialiased`}
+        className={`${signikaNegative.variable} ${rubik.variable} antialiased flex flex-col min-h-screen`}
       >
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   );

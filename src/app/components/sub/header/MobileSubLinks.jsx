@@ -17,17 +17,18 @@ const MobileSubLinks = ({
       } transition-all duration-500`}
       role="list"
     >
-      {group.map((subLink, index) => (
-        <li key={index}>
-          <Link
-            href={subLink?.href}
-            className="p-2 px-6 inline-block font-medium hover:bg-lightBlue rounded-md hover:text-buttonBackground transition-all duration-500"
-            onClick={handleLinkClick}
-          >
-            {subLink?.label}
-          </Link>
-        </li>
-      ))}
+      {groupIsOpen &&
+        group.map((subLink, index) => (
+          <li key={index}>
+            <Link
+              href={subLink?.href}
+              className="p-2 z-50 px-6 inline-block font-medium hover:bg-lightBlue rounded-md hover:text-buttonBackground transition-all duration-500"
+              onClick={handleLinkClick}
+            >
+              {subLink?.label}
+            </Link>
+          </li>
+        ))}
     </ul>
   );
 };

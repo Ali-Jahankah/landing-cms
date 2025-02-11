@@ -8,7 +8,6 @@ const NavBar = () => {
       <div className="flex justify-between items-center">
         <HeaderLogo />
         <DesktopNav />
-
         <MobileNav />
       </div>
     </nav>

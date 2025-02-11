@@ -4,7 +4,6 @@ const DesktopSubLinks = ({ group }) => {
   return (
     <div
       className={`absolute left-0 top-14 w-max min-w-[400px] h-52 overflow-auto transform origin-top scale-y-0 group-hover:scale-y-100 transition-all duration-300 ease-out shadow-xl bg-buttonBackground gap-2 flex flex-wrap flex-col py-3`}
-      style={{ transformOrigin: 'top' }}
     >
       {group.map((subLink) => (
         <Link

@@ -7,7 +7,6 @@ import MobileNavBarOption from './MobileNavBarOption';
 
 const MobileNav = () => {
   const [navBarIsOpen, setNavBarIsOpen] = useState(false);
-
   const toggleMenu = () => setNavBarIsOpen(!navBarIsOpen);
   return (
     <>

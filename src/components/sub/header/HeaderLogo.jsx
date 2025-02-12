@@ -1,4 +1,4 @@
-import { fetchHeaderData } from '@/app/utils/healpers';
+import { fetchHeaderData } from '@/utils/healpers';
 import Image from 'next/image';
 import Link from 'next/link';
 

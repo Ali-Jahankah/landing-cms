@@ -1,7 +1,7 @@
 import { Signika_Negative, Rubik } from 'next/font/google';
-import Footer from './components/main/Footer';
-import Header from './components/main/Header';
-import './styles/globals.css';
+import Footer from '../components/main/Footer';
+import Header from '../components/main/Header';
+import '../styles/globals.css';
 
 const signikaNegative = Signika_Negative({
   variable: '--font-signika-negative',

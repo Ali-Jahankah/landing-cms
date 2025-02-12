@@ -1,5 +1,5 @@
 import MobileNav from './MobileNav';
-import HeaderLogo from '../../sub/header/HeaderLogo';
+import HeaderLogo from './HeaderLogo';
 import DesktopNav from './DesktopNav';
 
 const NavBar = () => {

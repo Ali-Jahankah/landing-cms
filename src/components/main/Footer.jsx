@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { fetchFooterData } from '@/app/utils/healpers';
+import { fetchFooterData } from '@/utils/healpers';
 import Link from 'next/link';
 
 const Footer = async () => {

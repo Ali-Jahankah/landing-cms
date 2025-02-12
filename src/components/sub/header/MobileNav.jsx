@@ -1,6 +1,6 @@
 'use client';
 
-import { navBarConfig } from '@/app/config/navbar';
+import { navBarConfig } from '@/config/navbar';
 import { useState } from 'react';
 import BurgerButton from './BurgerButton';
 import MobileNavBarOption from './MobileNavBarOption';

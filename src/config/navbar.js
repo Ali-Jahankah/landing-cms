@@ -51,7 +51,7 @@ export const navBarConfig = [
   },
   {
     label: 'Pricing',
-    href: '#pricing',
+    href: 'pricing',
     leftIcon: BanknotesIcon,
     hasGroup: false
   }
